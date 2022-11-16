@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.green-area{
+    height: 15vh;
+    width: 100%;
+    background-color: #009688;
+}
+.grey-area{
+    height: 85vh;
+    width: 100%;
+    background-color: #dadbd4;
+}
+.container{
+    height: 90%;
+    width: 80%;
+    position: absolute;
+    background-color: white;
+    display: flex;
+    top: 5%;
+    left: 10%;
+}
+.menu-sx{
+    width: 35%;
+    height: 100%;
+    border: 2px solid blueviolet;
+}
+.mess-dx{
+    width: 65%;
+    height: 100%;
+    border: 2px solid orange;
+}
+
