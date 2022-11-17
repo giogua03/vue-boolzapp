@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--css-->
+        <link rel="stylesheet" href="stile.css">
+        <!--js-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <script src="scrypt.js"defer></script>
+       
+    </head>
+<body>
+    <div class="green-area"></div>
+    <div class="grey-area"></div>
+    <div class="container1">
+        <div class="menu-sx">
+            <div class="user-info">
+                <div class="img-user">
+                    <img class="avatar-user" src="img/avatar_io.jpg" alt="User avatar">
+				    <span class="username">GIORGIO</span>
+                </div>
+				<div class="user-c">
+                    <i class="fas fa-circle-notch"></i>
+				    <i class="fas fa-comment-alt"></i>
+				    <i class="fas fa-ellipsis-v"></i>
+                </div>
+				
+			</div>
+            <div class="notifiche">
+                <div class="bell">
+					<i class="fa fa-bell-slash"></i>
+				</div>
+                <div class="text1">
+                    <div><strong>RICEVI NOTIFICHE DI NUOVI MESSAGGI</strong></div>
+                    <div><a href="#!">ATTIVA NOTIFICHE</a></div>
+                </div>
+            </div>
+            <div class="search">
+                <input class="sfifiat" type="text" placeholder="Cerca o inizia una chat">
+            </div>
+            <div class="contacts">
+                    <div v-for="contact in contacts" :key="contacts.avatar" class="contact">
+                        <div class="cont-s">
+                        <img :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name" class="img-cont">
+					    <div class="details">
+						    <div class="prima-l">
+							    <div class="username">{{ contact.name }}</div>
+							    <div class="last">Ultimo messaggio</div>
+						    </div>
+						    <div class="seconda-l">
+							    <div class="ora">00:00</div>
+						    </div>
+					    </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <div class="mess-dx"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js" ></script>
+</body>
+</html>
+
+

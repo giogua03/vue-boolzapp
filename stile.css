@@ -13,7 +13,7 @@
     width: 100%;
     background-color: #dadbd4;
 }
-.container{
+.container1{
     height: 90%;
     width: 80%;
     position: absolute;
@@ -26,10 +26,85 @@
     width: 35%;
     height: 100%;
     border: 2px solid blueviolet;
+    display: flex;
+	flex-direction: column;
+}
+.menu-sx .user-info{
+    display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: .5rem 1rem;
+	background-color: violet;
+    justify-content: space-between;
+}
+.menu-sx .user-info .avatar-user {
+	flex: 0 0 60px;
+	height: 60px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 100px;
+
 }
 .mess-dx{
     width: 65%;
     height: 100%;
     border: 2px solid orange;
 }
+.notifiche{
+    display: flex;
+    background-color: lightblue;
+    padding:  1rem;
+}
+.notifiche .bell{
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 50px;
+    border-radius: 100px;
+    background-color: white;
+    color: lightblue;
+    margin-right: 1rem;
+}
+.search{
+    display: flex;
+    padding: 1rem;
+    background-color: grey;
+    
+}
 
+.search .sfifiat{
+    width: 500px;
+}
+.contacts :hover{
+    background-color: lightgrey;
+}
+.contacts .img-cont{
+    width: 70px;
+    border-radius: 100px;
+    display: flex;
+    margin: 1rem;
+}
+.contacts .details{
+    display: flex;
+}
+.cont-s{
+    display: flex;
+}
+.contacts .seconda-l{
+    display: flex;
+    justify-content: flex-end;
+}
+.details{
+    margin: 1rem;
+}
+.contacts{
+    overflow-y: auto;
+}
+.ora{
+    display: flex;
+    justify-content: flex-end;
+    
+}
