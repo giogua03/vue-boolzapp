@@ -171,7 +171,28 @@ new Vue ({
         setActiveIndex(index) {
 			this.activeIndex = index;
 		},
-    },
+        sendMessage() {
+			this.contacts[this.activeIndex].messages.push({
+				date: this.getNow(),
+				message: this.newMessage,
+				status: 'sent',
+			});
+			this.newMessage = '';
+			const receiverIndex = this.activeIndex;  
+			setTimeout(() => {
+				this.contacts[receiverIndex].messages.push({
+					
+					date: this.getNow(),
+					message: 'Ok',
+					status: 'received',
+				});
+			}, 1000);
+		},
+		getNow() {
+			return luxon.DateTime.now().toFormat('dd/MM/yyyy HH:mm:ss');
+		}
+	},
+    
 
 });
 for (let i = 0; i < contacts.length - 1; i++) {

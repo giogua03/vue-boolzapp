@@ -83,11 +83,8 @@
                 <div v-for="objMessage in contacts[activeIndex].messages" class="massage"  :class="'message-' + objMessage.status">
                     {{ objMessage.message}}
                     <div class="data-invio">{{ objMessage.date}}</div>
-                    <i class="fa-solid fa-chevron-down message-menu-toggler"></i>
-					<ul class="message-menu">
-						<li>Info messaggio</li>
-						<li>Cancella messaggio</li>
-					</ul>
+                    
+					
                 </div>
             </div>
             <div class="message-bar">
