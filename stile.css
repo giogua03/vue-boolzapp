@@ -108,3 +108,33 @@
     justify-content: flex-end;
     
 }
+.user-av{
+    height: 60px;
+    object-fit: cover;
+	object-position: center;
+	border-radius: 100px;
+    flex: 0 0 60px;
+    margin-right: 1rem ;
+}
+.info-user{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background-color: violet;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+}
+.area-name{
+    display: flex;
+    flex-direction: column;
+    
+    margin: auto;
+}
+.ogg-user{
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+}
+.area-n{
+    display: flex;
+}

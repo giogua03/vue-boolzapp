@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+        <script src="https://cdn.jsdelivr.net/npm/luxon@3.1.0/build/global/luxon.min.js" defer></script>
         <script src="scrypt.js"defer></script>
        
     </head>
@@ -62,7 +62,38 @@
                     </div>
             </div>
         </div>
-        <div class="mess-dx"></div>
+        <div class="mess-dx">
+            <div class="info-user">
+                
+                <div class="area-n">
+                    <img class="user-av" :src="'img/avatar' + contacts[activeIndex].avatar + '.jpg'" :alt="contacts[activeIndex].name">
+                    <div class="area-name">
+                        <span class="username">{{ contacts[activeIndex].name }}</span>
+                        <span class="access-user">Ultimo Acesso oggi alle 12:00</span>
+                    </div>
+                </div>
+                <div class="ogg-user">
+                    <i class="fas fa-search"></i>
+				    <i class="fas fa-paperclip"></i>
+				    <i class="fas fa-ellipsis-v"></i>
+                </div>
+                
+            </div>
+            <div class="messages">
+                <div v-for="objMessage in contacts[activeIndex].messages" class="massage"  :class="'message-' + objMessage.status">
+                    {{ objMessage.message}}
+                    <div class="data-invio">{{ objMessage.date}}</div>
+                    <i class="fa-solid fa-chevron-down message-menu-toggler"></i>
+					<ul class="message-menu">
+						<li>Info messaggio</li>
+						<li>Cancella messaggio</li>
+					</ul>
+                </div>
+            </div>
+            <div class="message-bar">
+				<input type="text" placeholder="Scrivi un messaggio da inviare" v-model="newMessage" @keyup.enter="sendMessage">
+			</div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js" ></script>
 </body>

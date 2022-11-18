@@ -163,10 +163,14 @@ new Vue ({
             }
             ],
             }
-            ]
+            ],
+            activeIndex: 0,
+		    newMessage: '',
     },
     methods:{
-        
+        setActiveIndex(index) {
+			this.activeIndex = index;
+		},
     },
 
 });
