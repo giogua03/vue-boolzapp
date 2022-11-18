@@ -145,7 +145,7 @@
 	padding: 3rem 5rem;;
 }
 
-.messages .message {
+ .message {
 	position: relative;
 	flex: 0 1 auto;
 	margin-bottom: .5rem;
@@ -172,33 +172,6 @@
 	bottom: .5em;
 	font-size: .7em;
 }
-
-.message .message-menu-toggler {
-	display: none;
-	padding: .3em;
-}
-
-.message .message-menu-toggler:hover {
-	cursor: pointer;
-}
-
-.message:hover .message-menu-toggler {
-	display: block;
-	position: absolute;
-	right: .5em;
-	top: .5em;
-}
-
- .message-menu {
-	display: none;
-	position: absolute;
-	right: 0;
-	top: calc(100% - 5px);
-	list-style: none;
-	background-color: white;
-	box-shadow: 0 0 5px #888888;
-}
-
 .mess-dx .message-bar {
 	flex: 0 0 auto;
 }
