@@ -46,7 +46,7 @@
                 <input class="sfifiat" type="text" placeholder="Cerca o inizia una chat">
             </div>
             <div class="contacts">
-                    <div v-for="contact in contacts" :key="contacts.avatar" class="contact">
+                <div v-for="(contact, i) in contacts" :key="contacts.avatar" class="contact" @click="changeUser(i)">
                         <div class="cont-s">
                         <img :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name" class="img-cont">
 					    <div class="details">

@@ -145,7 +145,7 @@
 	padding: 3rem 5rem;;
 }
 
- .message {
+.messages .message {
 	position: relative;
 	flex: 0 1 auto;
 	margin-bottom: .5rem;
@@ -159,11 +159,13 @@
 	align-self: flex-end;
 	background-color: green;
 	overflow-wrap: break-word;
+    margin :1rem;
 }
 
 .messages .message-received {
 	align-self: flex-start;
 	background-color: lawngreen;
+    margin: 1rem;
 }
 
 .message .sent-date {
@@ -173,5 +175,7 @@
 	font-size: .7em;
 }
 .mess-dx .message-bar {
-	flex: 0 0 auto;
+	
+    display: flex;
+    align-self: flex-end;
 }
